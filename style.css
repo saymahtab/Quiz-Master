@@ -1,0 +1,105 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1d1f27;
+    color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.panel {
+    background-color: #282c34;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+    /* text-align: center; */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.panel:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+
+#heading {
+    font-size: 2.5em;
+    color: #61dafb;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#ques {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    background-color: #3a3f4a;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.options div {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #61dafb;
+}
+
+.options label {
+    font-size: 1.2em;
+    color: #f0f4f8;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.options label:hover {
+    color: #61dafb;
+}
+
+#btn {
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+#btn:hover {
+    background-color: #35b1e3;
+    transform: scale(1.05);
+}
+
+#score {
+    font-size: 1.4em;
+    color: #61dafb;
+    margin-top: 25px;
+    background-color: #3a3f4a;
+    padding: 15px;
+    border-radius: 10px;
+}
+.opt-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
