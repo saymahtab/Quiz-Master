@@ -8,7 +8,7 @@ async function fetchQuestions(){
     try {
         const resp = await fetch("https://opentdb.com/api.php?amount=10");
         if(!resp.ok){
-            throw new Error("Couldn't Fetch questions!");
+            throw new Error("Couldn't Fetch questions!")
         }
         const data = await resp.json();
         Questions = data.results;   
